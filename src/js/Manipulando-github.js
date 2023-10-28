@@ -6,31 +6,15 @@ import { tela } from "/src/js/objeto/tela.js";
 
 
 
-
+  
 
 document.querySelector('.botao').addEventListener('click',()=>{
     const nomeBuscado = document.querySelector('.campo-do-nome').value;
 
-    if (campoVazio(nomeBuscado))return;
-
+     if (campoVazio(nomeBuscado))return;
+    
       gerencimento(nomeBuscado);  
 })
-
-
-
-
-document.querySelector('.campo-do-nome').addEventListener('keyup',(e)=>{
-  const nomeBuscado = e.target.value
-  const key = e.which || e.keyCode
-  const numeroTecla = key === 13
-
-  if(campoVazio(nomeBuscado)) return
- 
-  if(numeroTecla){
-    gerencimento(nomeBuscado);
-  }
-})
-
 
 
 function campoVazio(nomeBuscado){
@@ -39,6 +23,24 @@ function campoVazio(nomeBuscado){
     return true
   }
 }
+
+
+document.querySelector('.campo-do-nome').addEventListener('keyup',(e)=>{
+  const nomeBuscado = e.target.value
+  const key = e.which || e.keyCode
+  const numeroTecla = key === 13
+
+  if(campoVazio(nomeBuscado)) return
+
+ 
+  if(numeroTecla){
+    gerencimento(nomeBuscado);
+  }
+  
+})
+
+
+
 
 
 
