@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body{
+    font-family: "Kumbh Sans", sans-serif;  
+    background-color:#24292e; 
+    height: 100vh;
+}
+
+.devicon-github-original{
+    margin-top: 30px;
+    font-size: 80px;
+    color: #FFF;
+}
+ 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+
+.container .conteudo{
+    background-color: #fff;
+    width: 65%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 3px 3px 3px 3px #888888;
+}
+
+.container .conteudo h2{
+    margin: 60px 0 20px
+}
+
+.container .conteudo .campo-do-nome{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+.container .conteudo .botao{
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin-bottom: 30px;
+   cursor: pointer;
+}
+
+.container .conteudo .botao:hover{
+    background-color:#24292e;
+    color: #fff;
+    transition: ease 0.4s;
+}
+
+.container .conteudo .dadosPerfil{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+}
+.container .conteudo .dadosPerfil .info{
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+
+.container .conteudo .dadosPerfil .nomeUsuario{
+    margin-left: 30px ;
+}
+
+
+.container .conteudo .dadosPerfil .fotoUsuario{
+    border-radius: 50%;
+    width: 400px;
+    border: 10px solid gray;
+    margin: 50px 0 50px 80px;
+}
+
+.container .conteudo .dadosPerfil .lista{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.container .conteudo .dadosPerfil .lista .itens-list{
+    margin: 30px;
+}
+
+
+.container .conteudo .dadosPerfil .lista  a{
+  padding: 20px;
+  border: 1px solid gray;  
+  border-radius: 5px;
+  transition: ease 0.4s;
+}
+
+.container .conteudo .dadosPerfil .lista a:hover{
+    background-color:#24292e;
+    color: #fff;
+}
+
+
+@media(max-width: 800px){
+    .container .conteudo .campo-do-nome{
+        width: 300px;
+    }
+
+    .container .conteudo .dadosPerfil .fotoUsuario{
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width: 425px){
+    .container .conteudo{
+        width: 300px;
+        height: 400px;
+    }
+
+    .container .conteudo .campo-do-nome{
+        width: 240px;
+    }
+}
